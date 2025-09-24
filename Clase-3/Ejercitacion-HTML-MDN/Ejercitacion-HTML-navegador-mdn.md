@@ -23,3 +23,4 @@ Recrear únicamente la estructura del **navegador lateral izquierdo** de la docu
 - No es necesario aplicar estilos CSS en esta etapa.
 - No es necesario incluir funcionalidad (como toggle o navegación).
 - Solo se requiere representar visualmente la jerarquía mediante el uso correcto de listas.
+- No es necesario que si el link es <a> o <html> se vean los '<' / '>'

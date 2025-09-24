@@ -1,0 +1,16 @@
+.title{
+    font-size: 36px;
+    color: rgb(3, 3, 36);
+    font-family: sans-serif;
+}
+
+.subtitle{
+    font-size: 28px;
+    color: rgb(3, 3, 36);
+    font-family: cursive;
+}
+
+.underline{
+    /* Subrayado de 1px de grosor azul */
+    text-decoration: underline 1px rgb(3, 3, 36);
+}

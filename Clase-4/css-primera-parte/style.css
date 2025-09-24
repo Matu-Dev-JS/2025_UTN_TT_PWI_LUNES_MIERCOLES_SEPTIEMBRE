@@ -1,0 +1,43 @@
+/* 
+CSS = Cascade Style Sheet 
+Hoja de estilo en cascada
+
+Responsabilidad: Establecer los estilos de la pagina
+
+Reglas:
+- Cascada: 
+    Si uso 2 veces o mas la misma propiedad para x elemento, se tomara el ultimo valor. Siempre y cuando la especificidad entre ellos sea igual.
+
+- Especificidad: 
+    Dependiendo de la especificidad de la orden se puede aplicar un estilo sobre otro SIN IMPORTAR LA CASCADA
+
+
+*/
+#titulo-especial{
+    font-size: 900px;
+}
+
+.titulo{
+    font-size: 12px;
+}
+
+h1{
+    font-size: 180px;
+}
+
+
+
+/* * es el selector universal, llama a todos los elementos de mi pagina */
+*{
+    font-size: 90px  !important;
+}
+
+
+/* .titulo{
+    color: rgb(129, 172, 129); 
+    font-size: 120px;
+}
+
+.titulo{
+    color: rgb(249, 0, 0); 
+} */

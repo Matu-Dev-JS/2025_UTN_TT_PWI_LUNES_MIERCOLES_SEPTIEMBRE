@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import indica al navegador que debe cargar x archivo de css */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Selecciono al elemento con la clase title */
+.title{
+    font-family: "Dancing Script", cursive;
+
+    /* Tamaño de letra */
+    font-size: 36px;
+
+    /* Cambia el color de la letra */
+    color: #fc7373;
+
+    /* Definir el alineamiento de texto */
+    text-align: center;
+
+    /* Espaciado entre palabras */
+    word-spacing: 30px;
+
+    /* Espaciado entre letras */
+    letter-spacing: 10px;
+
+    /* Decoracion de texto
+    
+        - Tipo de decoracion: line-through underline overline
+     
+        - Tipo de linea: dashed, solid, dotted, double, wavy
+
+        - Color de la decoracion
+
+        - Grosor de la decoracion
+    */
+    /* text-decoration: underline wavy red 2px; */
+}
+
+
+/* Selecciono al elemento p */
+p{
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+}
+
+.bold{
+    /* Cambiar la familia de fuentes */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+    /* Cambiar el peso de la fuente */
+    font-weight: 800;
+}
