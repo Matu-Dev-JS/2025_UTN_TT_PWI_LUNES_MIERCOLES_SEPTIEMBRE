@@ -3,6 +3,7 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Selecciono al elemento con la clase title */
@@ -50,4 +51,103 @@ p{
     
     /* Cambiar el peso de la fuente */
     font-weight: 800;
+}
+
+
+
+
+/* 
+inline: 
+    Los elementos el linea no pueden tener ancho o alto personalizados
+    Se pueden acomodar sobre una misma linea
+    Ejemplos:
+        a, span, label, b, strong, em, i
+
+block: 
+    Siempre van a ocupar todo el bloque, no pueden compartirlo
+    Se les puede modificar ancho y alto
+    EJEMPLOS:
+        div, h1...h6, p, nav, header, section, article, footer, main, form
+
+inline-block: 
+    Se pueden acomodar sobre una misma linea
+    Se les puede modificar ancho y alto
+    Ejemplos:
+        img, button, input, video, iframe
+
+*/
+
+/* Propiedades de caja */
+.caja{
+    /* 
+    Permite determinar cual de las cajas sera la que definiremos el ancho y alto
+    */
+    box-sizing: border-box;
+    /* display: inline-block; */
+
+    /* Color de fondo */
+    background-color: red;
+    /* Alto */
+    height: 100px;
+    /* Ancho */
+    width: 100px;
+    padding-left: 20px;
+    /* Un padding 20px a todos lados */
+    /* padding: 10px; */
+
+    /* padding vertical 10px padding horizontal 5px */
+    /* padding: 10px 5px; */
+
+    /* Hacia arriba 10px, horizontal 5px, hacia abajo 2px */
+    /* padding: 10px 5px 2px; */
+
+    /* arriba, derecha, abajo, izquierda */
+    /* padding: 10px 5px 2px 20px; */
+
+    /* Define el borde del elemento */
+    /* border: 10px black solid; */
+    border-left: 5px dotted rgb(0, 0, 255);
+    /* margin-bottom: 20px;
+    margin-left: 20px; */
+
+    /* Redondeado de 10px */
+    border-radius: 10px;
+    
+    /* Hacer un circulo */
+    /* border-radius: 50%; */
+
+    box-shadow: 0px 10px 10px 0 black;
+}
+
+.video-yt{
+    width: 800px;
+    height: 400px;
+}
+
+.btn{
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+.btn:hover{
+    background-color: rgb(204, 168, 237);
+}
+
+.caja-especial{
+    background: #020024;
+    background: linear-gradient(90deg, rgb(30, 22, 184) 0%, rgba(9, 9, 121, 1) 46%, rgba(0, 212, 255, 1) 100%);
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.caja-especial-content{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 5px;
 }
