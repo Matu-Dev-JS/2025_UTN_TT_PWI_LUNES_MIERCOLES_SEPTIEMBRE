@@ -1,0 +1,101 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM sans', sans-serif;
+}
+
+.title{
+    color: #1d1e20;
+    font-size: 36px;
+    text-align: center;
+}
+
+.secondary-btn{
+    border: 1px solid #673de5;
+    padding: 11px 47px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #673de5;
+}
+
+.secondary-btn:hover{
+    background-color: #e0d9fa;
+    cursor: pointer;
+}
+
+
+.section-migracion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-migracion-content{
+    width: 1128px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.migracion-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.migracion-card{
+    background-color: #f3f4fe;
+    border-radius: 15px;
+    border: 1px solid #d5dfff;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.migracion-card-header{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.migracion-card-header img{
+    width: 48px;
+    height: 48px;
+
+}
+
+.section-migracion-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.migracion-card-rating{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.bi-star-fill{
+    color: #00af8f;
+}
+
+.migracion-card-header-info span{
+    color: #888faa;
+    font-size: 14px;
+}
+
+.link{
+    font-weight: 700;
+    color: #673de5;
+    text-decoration: none;
+}
+
+.link .bi-chevron-right{
+    font-size: 12px;
+}

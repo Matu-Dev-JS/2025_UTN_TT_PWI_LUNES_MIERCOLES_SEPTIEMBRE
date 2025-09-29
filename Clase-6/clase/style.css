@@ -1,0 +1,78 @@
+/* Normalizacion */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.padre{
+   
+    /* 
+    Viewport width
+    1vw = 1% del ancho de la pagina web
+    100vw = 100% de ancho de toda la pagina 
+    */
+    height: 100vh;
+    /* 
+    Viewport height
+    1vh = 1% de alto de la pagina web
+    100vh = 100% de alto de toda la pagina 
+    */
+    background-color: red;
+
+    /* Marca que el elemento es una FLEXBOX */
+    display: flex;
+
+    /* 
+    Permite marcar como acomodamos a nuestros hijos
+    Uno aldado del otro = row (default)
+    Uno abajo del otro = column
+    */
+    flex-direction: row;
+
+    /* 
+    Si estamos en row justify-content permite alinear mis elementos en el eje x
+        - right/flex-end => derecha
+        - start/flex-start/left => izquierda (default)
+        - center => lo centra
+
+    Si estamos en column justify-content permite alinear mis elementos en el eje y
+        - right/flex-end => abajo
+        - start/flex-start/left => arriba (default)
+        - center => lo centra
+    */
+    justify-content: space-around;
+
+    /* 
+    Si estamos en row align-items permite alinear mis elementos en el eje y
+        - bottom/flex-end => abajo
+        - start/flex-start/top => arriba (default)
+        - center => lo centra
+
+    Si estamos en column align-items permite alinear mis elementos en el eje x
+        - bottom/flex-end => derecha
+        - start/flex-start/top => izquierda (default)
+        - center => lo centra
+    */
+    align-items: center;
+
+    /* 
+    Permite marcar la cantidad de espacio que queremos entre nuestros hijos
+    */
+    gap: 20px;
+    padding: 0px 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.hijo{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
