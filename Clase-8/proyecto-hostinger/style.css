@@ -1,0 +1,89 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  color: #f8f9fa;
+  line-height: 24px;
+  font-weight: 400;
+}
+.paragraph {
+  font-size: 16px;
+  color: white;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+.section-migracion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1f1346;
+  padding: 48px 16px;
+
+}
+
+.section-migracion-content {
+  width: 1208px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+
+}
+
+
+.sector-en-blanco {
+  height: 100vh;
+}
+.section-migracion-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: left;
+}
+.card {
+  background-color: #2f1c6a;
+  border-radius: 10px;
+  border: 1px var #d5dfff;
+  padding: 32px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-icon {
+  background-color: #673de6;
+  border-radius: 10px;
+  width: 35px;
+  padding: 5px;
+  text-align: center;
+}
+.section-actions-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section-actions-container a {
+  background-color: #673de6;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 11px 47px;
+  font-weight: 700;
+}
+.section-actions-container a:hover {
+  background-color: #5025d1;
+  cursor: pointer;
+}
