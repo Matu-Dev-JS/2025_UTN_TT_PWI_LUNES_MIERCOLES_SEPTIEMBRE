@@ -1,0 +1,91 @@
+/* MOBILE FIRST */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.caja{
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+@media screen and (min-width: 350px) {
+    .caja{
+        background-color: white;
+        border: 1px solid black;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .padre{
+        background-color: #800800;
+        height: 100vh;
+        flex-direction: row;
+    }
+
+    .caja{
+        width: 200px;
+    }
+}
+
+
+/* DESKSTOP FIRST */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.padre{
+    height: 100vh;
+    background-color: #800800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.caja{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid black;
+} */
+
+
+/* 
+CONDICIONES
+Si el ancho de mi pagina es menor a 700px entonces ejecutare este codigo de css
+*/
+/* @media screen and (max-width: 700px){
+    .padre{
+        background-color: blue;
+        flex-direction: column;
+    }
+
+    .caja{
+        width: 90%;
+    }
+} 
+
+@media screen and (max-width: 350px) {
+    .caja{
+        background-color: black;
+    }
+} */
