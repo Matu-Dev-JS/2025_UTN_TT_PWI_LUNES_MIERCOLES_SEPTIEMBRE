@@ -1,0 +1,21 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/* 
+Guardar una variable en css
+*/
+:root{
+    --ff-primary: "DM Sans", sans-serif;
+    --neutral-0: #ffffff;
+    --neutral-100: #f0f1f5;
+    --neutral-600: #1d1e20;
+    --primary-500: #673de5;
+}
+
+
+*{
+    font-family: var(--ff-primary);
+    padding: 0;
+    margin: 0;
+}
