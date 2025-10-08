@@ -10,6 +10,7 @@ Guardar una variable en css
     --neutral-0: #ffffff;
     --neutral-100: #f0f1f5;
     --neutral-600: #1d1e20;
+    --primary-200: #cbc8ff;
     --primary-500: #673de5;
 }
 
@@ -18,4 +19,118 @@ Guardar una variable en css
     font-family: var(--ff-primary);
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.title{
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 64px;
+}
+
+.subtitle{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    /* letter-spacing: -1px; */
+}
+
+.paragraph{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.link{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-500);
+    text-decoration: none;
+}
+
+.pill{
+    padding: 4px 12px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: var(--neutral-100);
+}
+
+/* 
+CLASE MODIFICADORA 
+*/
+.pill--primary-200{
+    background-color: var(--primary-200);
+}
+
+/* 
+CLASES UTILITARIAS
+*/
+.bg-neutral-100{
+    background-color: var(--neutral-100);
+}
+
+
+.mails-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 104px 0;
+}
+.section-content{
+    width: 1800px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.mails-section__articles-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.feature-article{
+    flex: 1;
+    background-color: var(--neutral-0);
+    border-radius: 16px;
+    padding: 48px 32px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.feature-article__image{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.feature-article__image img{
+    width: 100%;
+}
+
+.section-header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.feature-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-list .bi-check{
+    color: var(--primary-500);
+    font-size: 18px;
 }
