@@ -5,7 +5,7 @@
 /* 
 Guardar una variable en css
 */
-:root{
+:root {
     --ff-primary: "DM Sans", sans-serif;
     --neutral-0: #ffffff;
     --neutral-100: #f0f1f5;
@@ -15,45 +15,45 @@ Guardar una variable en css
 }
 
 
-*{
+* {
     font-family: var(--ff-primary);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
 
-.title{
+.title {
     font-size: 56px;
     font-weight: 400;
     text-align: center;
     line-height: 64px;
 }
 
-.subtitle{
+.subtitle {
     font-size: 40px;
     font-weight: 400;
     line-height: 48px;
     /* letter-spacing: -1px; */
 }
 
-.paragraph{
+.paragraph {
     font-size: 16px;
     line-height: 24px;
 }
 
-.link{
+.link {
     font-weight: 700;
     font-size: 14px;
     color: var(--primary-500);
     text-decoration: none;
 }
 
-.pill{
+.pill {
     padding: 4px 12px;
     border-radius: 50px;
     text-align: center;
@@ -63,25 +63,26 @@ li{
 /* 
 CLASE MODIFICADORA 
 */
-.pill--primary-200{
+.pill--primary-200 {
     background-color: var(--primary-200);
 }
 
 /* 
 CLASES UTILITARIAS
 */
-.bg-neutral-100{
+.bg-neutral-100 {
     background-color: var(--neutral-100);
 }
 
 
-.mails-section{
+.mails-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 104px 0;
 }
-.section-content{
+
+.section-content {
     width: 1800px;
     padding: 0 80px;
     display: flex;
@@ -90,24 +91,24 @@ CLASES UTILITARIAS
     gap: 50px;
 }
 
-.mails-section__articles-container{
+.mails-section__articles-container {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.feature-article{
+.feature-article {
     flex: 1;
     background-color: var(--neutral-0);
     border-radius: 16px;
-    
+
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: start;
 }
 
-.feature-article-content{
+.feature-article-content {
     padding: 48px 32px 0px;
     display: flex;
     flex-direction: column;
@@ -116,31 +117,66 @@ CLASES UTILITARIAS
 }
 
 
-.feature-article__image{
+.feature-article__image {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: end;
 }
-.feature-article__image img{
+
+.feature-article__image img {
     width: 100%;
 }
 
-.section-header{
+.section-header {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
 }
 
-.feature-list{
+.feature-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.feature-list .bi-check{
+.feature-list .bi-check {
     color: var(--primary-500);
     font-size: 18px;
 }
 
+@media screen and (max-width: 1025px) {
+
+    .title {
+        font-size: 40px;
+        line-height: 40px;
+        max-width: 646px;
+    }
+
+    .subtitle {
+        font-size: 36px;
+    }
+
+    .section-content {
+        padding: 0 40px;
+    }
+
+    .mails-section__articles-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 32px;
+    }
+    .subtitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .section-content {
+        padding: 0 16px;
+    }
+}
