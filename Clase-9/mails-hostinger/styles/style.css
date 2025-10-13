@@ -100,12 +100,21 @@ CLASES UTILITARIAS
     flex: 1;
     background-color: var(--neutral-0);
     border-radius: 16px;
-    padding: 48px 32px 0px;
+    
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: start;
 }
+
+.feature-article-content{
+    padding: 48px 32px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px
+}
+
 
 .feature-article__image{
     width: 100%;
@@ -134,3 +143,4 @@ CLASES UTILITARIAS
     color: var(--primary-500);
     font-size: 18px;
 }
+
