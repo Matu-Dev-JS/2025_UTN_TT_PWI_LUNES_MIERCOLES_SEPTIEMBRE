@@ -70,7 +70,7 @@ Lo podemos usar la eliminar por posicion
 //splice
 
 //Primero debemos averiguar la posicion del elemento a eliminar
-let posicion = nombres.indexOf('juan')
+//let posicion = nombres.indexOf('juan')
 
 //Quito a juan y agrego a nicolas y juancito
 //nombres.splice(posicion, 1, 'juancito', 'nicolas')
@@ -81,4 +81,79 @@ let posicion = nombres.indexOf('juan')
 //Elimino a juan
 //nombres.splice(posicion, 1)
 
-console.log(nombres)
+//console.log(nombres)
+
+//LOS ARRAYS SON ITERABLES
+//Significa que podemos recorrerlos con un bucle
+//Piensenlo asi: Usamos bucles for cuando queremos repetir algo y conocemos cuantas veces lo vamos a repetir
+//Quiero mandar un mail a cada usuario de mi lista
+//Quiero calcular el total del carrito sumando el subtotal de cada item
+//Quiero aplicar un descuento a todos los items que cumplan x condicion
+
+
+let usuarios = [
+    {
+        name: 'pepe',
+        mail: 'pepe@gmail.com'
+    },
+    {
+        name: 'maria',
+        mail: "maria@gmail.com"
+    },
+    {
+        name: 'juan',
+        mail: "juan@gmail.com"
+    }
+]
+
+//i ira variando su valor de 0 a 2
+for(let i = 0; i < usuarios.length; i = i + 1){
+    console.log(usuarios[i].mail)
+}
+
+let carrito = [
+    {
+        name: 'tv samsung',
+        price: 200,
+        quantity: 2
+    },
+    {
+        name: 'tv samsung 2',
+        price: 300,
+        quantity: 2
+    },
+    {
+        name: 'tv samsung 3',
+        price: 400,
+        quantity: 2
+    }
+]
+let total = 0
+for(let i = 0; i < carrito.length; i = i + 1){
+    let subtotal = carrito[i].price * carrito[i].quantity
+    total = total + subtotal
+}
+console.log('El precio final de tu compra es: $' + total)
+
+
+
+let usuarios_2 = [
+    {
+        name: 'pepe',
+        lastname: 'suarez'
+    },
+    {
+        name: 'Maria',
+        lastname: 'suarez'
+    },
+    {
+        name: 'pedro',
+        lastname: 'suarez'
+    },
+]
+
+//Mostrar una alerta con los detalles del usuario con este formato
+//Un usuario registrado es: \nNombre: {name}\nApellido: {lastname}
+
+//Crear una funcion llamada buscarUsuarioPorNombre
+//Recibira un nombre por parametros y recorrera la lista de usuarios, en caso de encontrarlo nos devolvera el usuario, sino retornara null
