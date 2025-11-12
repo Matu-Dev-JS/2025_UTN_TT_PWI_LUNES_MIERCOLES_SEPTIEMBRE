@@ -50,7 +50,6 @@ let products = [
         title: 'Tv samsung 64',
         price: 7000
     },
-    
 ]
 
 let content_container = document.getElementById('content')
@@ -71,11 +70,36 @@ function renderProducts () {
 
 renderProducts()
 
+/* //Una funcion es un bloque de codigo guardado en memoria
+function saludar (nombre) {
+    console.log('Hola ' + nombre)
+}
 
+saludar("Paula")
+saludar('Tobias') */
+
+function agregarProducto (){
+    let title = prompt("Ingresa el title del producto")
+    let price = prompt("Ingresa el precio del producto")
+
+    let producto = {
+        title: title,
+        price: price
+    }
+    //Agrega un elemento al final de la lista
+    products.push(producto)
+    renderProducts()
+}
 /* 
 Crear una funcion llamada agregarProducto(), la misma solicitara por prompt un title y un price
 Luego creara un objeto con estos datos y lo agregara al array de products
 Una vez agregado debera llamarse a renderProducts()
+*/
+
+/* 
+Crear una funcion llamada eliminarProductoPorTitle que reciba el title y lo busque en la lista, si lo encuentra
+debe eliminarlo.
+Al modificar la lista debes llamar a renderProducts()
 
 */
 
