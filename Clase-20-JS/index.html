@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- SI le damos click al boton deberia decirnos "Hola mundo" por alerta -->
+    <button id="btn">Click</button>
+
+    <button id="btn-decrementar">-</button>
+    <span id="contador"></span>
+    <button id="btn-incrementar">+</button>
+    <button id="btn-reiniciar">Reiniciar</button>
+
+
+    <div>
+        <h2>Lista de tareas:</h2>
+        <!-- Aca renderizaremos las tareas -->
+        <ol id="tareas">
+
+        </ol>
+        <form id="formulario-tarea">
+            <div>
+                <label for="description">Descripcion de la tarea</label>
+                <textarea name="description" id="description" >
+
+                </textarea>
+            </div>
+            <button>Agregar</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
