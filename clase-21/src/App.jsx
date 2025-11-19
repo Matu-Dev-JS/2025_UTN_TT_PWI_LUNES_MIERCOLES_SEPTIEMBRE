@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+/* 
+Cuando una funcion retorna HTML la llamamos Componente
+Los componentes deben ir en UpperCamelCase
+Cuando queremos usar un componente decimos que queremos instanciar un componente
+Para instanciar un componente se debe usar el componente "as a component" (como componente)
+EJ: <CustomComponent/>
+*/
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <h1>Hola mundo</h1>
+      <button>Hola</button>
+      <CustomComponent/>
+      <CustomComponent/>
+      <CustomComponent/>
+      <CustomComponent/>
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+      <ProductCard />
+    </div>  
+  )
+}
+
+/* CustomComponent */
+
+function CustomComponent (){
+  return (
+    <h1>Soy un componente</h1>
+  )
+}
+
+function ProductCard (){
+  return (
+    <div>
+      <h2>Tv samsung</h2>
+      <span>Price: $4000 USD</span>
+      <button>Comprar</button>
+    </div>
   )
 }
 
