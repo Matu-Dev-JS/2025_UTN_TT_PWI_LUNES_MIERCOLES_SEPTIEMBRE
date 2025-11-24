@@ -13,7 +13,11 @@ function App() {
     <div>
       {titulo}
       <button>Hola</button>
-      <ProductCard title={'Tv LG 22\"'} price={4000} />
+      <ProductCard 
+        title={'Tv LG 22\"'} 
+        price={4000} 
+        has_discount 
+      />
       <ProductCard title={"Tv Noblex 34\""} price={3000} />
       <ProductCard title={"Tv samsung 42\""} price={5000}/>
       <ProductCard title={"Tv samsung 62\""} price={6000}/>
