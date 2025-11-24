@@ -21,7 +21,7 @@ function ProductCard(propiedades) {
         oferta = <span>Oferta</span>
     }
     return (
-        <div className="product-card">
+        <div className="product-card ">
             {/* Opcion 2 If simple */}
             {propiedades.has_discount && <span>Oferta</span>}
 

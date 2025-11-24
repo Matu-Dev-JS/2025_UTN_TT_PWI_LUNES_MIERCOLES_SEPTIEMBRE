@@ -1,3 +1,4 @@
+import MessagesContainer from './Components/MessagesContainer/MessagesContainer'
 import ProductCard from './Components/ProductCard/ProductCard'
 /* 
 Cuando una funcion retorna HTML la llamamos Componente
@@ -21,6 +22,7 @@ function App() {
       <ProductCard title={"Tv Noblex 34\""} price={3000} />
       <ProductCard title={"Tv samsung 42\""} price={5000}/>
       <ProductCard title={"Tv samsung 62\""} price={6000}/>
+      <MessagesContainer/>
     </div>  
   )
 }

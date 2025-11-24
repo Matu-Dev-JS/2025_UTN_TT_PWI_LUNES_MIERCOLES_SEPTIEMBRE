@@ -1,0 +1,41 @@
+
+
+.main-message-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 5px 10px;
+}
+
+.avatar{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar img {
+    width: 100%;
+}
+.message-info{
+    display: flex;
+    gap: 10px;
+}
+.message-date{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.message{
+    color: white;
+}
+
+.bot{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    background-color: blue;
+    color: white;
+    padding: 0 3px;
+}
