@@ -1,4 +1,4 @@
-
+import ProductCard from './Components/ProductCard/ProductCard'
 /* 
 Cuando una funcion retorna HTML la llamamos Componente
 Los componentes deben ir en UpperCamelCase
@@ -8,22 +8,21 @@ EJ: <CustomComponent/>
 */
 function App() {
 
-
+  let titulo = <h1>Hola mundo</h1>
   return (
     <div>
-      <h1>Hola mundo</h1>
+      {titulo}
       <button>Hola</button>
-      <CustomComponent/>
-      <CustomComponent/>
-      <CustomComponent/>
-      <CustomComponent/>
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      <ProductCard title={'Tv LG 22\"'} price={4000} />
+      <ProductCard title={"Tv Noblex 34\""} price={3000} />
+      <ProductCard title={"Tv samsung 42\""} price={5000}/>
+      <ProductCard title={"Tv samsung 62\""} price={6000}/>
     </div>  
   )
 }
+
+
+
 
 /* CustomComponent */
 
@@ -33,14 +32,5 @@ function CustomComponent (){
   )
 }
 
-function ProductCard (){
-  return (
-    <div>
-      <h2>Tv samsung</h2>
-      <span>Price: $4000 USD</span>
-      <button>Comprar</button>
-    </div>
-  )
-}
 
 export default App
