@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Contador from "./Components/Contador/Contador"
 
 
 function App (){
@@ -88,7 +89,7 @@ function App (){
         ? <button onClick={achicarParrafo}>Ver menos</button>
         : <button onClick={extenderParrafo}>Ver mas</button>
       }
-
+      <Contador/>
     </div>
   )
 }
