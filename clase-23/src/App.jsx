@@ -28,6 +28,16 @@ function App (){
   }
 
   console.log('Me renderize')
+
+  /* 
+  Crear un parrafo con 10 palabras
+  Crear un estado que diga elParrafoEstaExtendido, que sera un estado booleano
+  Inicialmente el estado sera false
+  Si el estado es true mostrara el parrafo con 10 palabras y un ...<button>Ver menos</button>
+  El boton 'ver menos' llamara a una funcion llamada axhicarParrafo() la cual cambiara el valor del estado a false
+  Si el estado es false mostrara un parrafo mas chiquito (5 palabras) y un ...<button>Ver mas</button>
+  El boton 'ver mas' llamara a una funcion llamada extenderParrafo() la cual cambiara el valor del estado a true
+  */
   return (
     <div>
       <span>El texto mostrado es: {texto_mostrado_value}</span>
