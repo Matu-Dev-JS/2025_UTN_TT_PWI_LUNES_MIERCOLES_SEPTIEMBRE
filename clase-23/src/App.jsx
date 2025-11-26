@@ -38,10 +38,57 @@ function App (){
   Si el estado es false mostrara un parrafo mas chiquito (5 palabras) y un ...<button>Ver mas</button>
   El boton 'ver mas' llamara a una funcion llamada extenderParrafo() la cual cambiara el valor del estado a true
   */
+  /* Ejemplo  */
+  /* 
+  const isOpenState = useState(false)
+  const isOpenValue = isOpenState[0]
+  const setIsOpen = isOpenState[1] 
+  */
+  function limitarParrafoPorPalabras (texto, cantidad_de_palabras){
+    return texto.split(' ').splice(0, cantidad_de_palabras).join(' ') + '...' 
+  }
+
+  /* let palabras = 'hola mundo que tal'.split(' ') // ['hola', 'mundo', 'que', 'tal']
+  let palabrasLimitadas = palabras.splice(0, 2) // ['hola', 'mundo']
+  let mensaje = palabrasLimitadas.join(' ') // 'hola mundo' */
+  /* let parrafo = 'hola que tal'
+  let mensaje_final = isOpen ? parrafo : limitarParrafoPorPalabras(parrafo, 2) */
+
+  let parrafo_original = 'hola que tal todo bien que tal, todo bien que tal'
+
+  const parrafoEstaExtendidoState = useState(false)
+  const parrafoEstaExtendidoValue = parrafoEstaExtendidoState[0]
+  const setParrafoEstaExtendido = parrafoEstaExtendidoState[1]
+
+  function extenderParrafo(){
+    setParrafoEstaExtendido(true)
+  }
+
+  function achicarParrafo(){
+    setParrafoEstaExtendido(false)
+  }
+
+  function alternarParrafoEstaExtendido(){
+    setParrafoEstaExtendido(!parrafoEstaExtendidoValue)
+  }
   return (
     <div>
       <span>El texto mostrado es: {texto_mostrado_value}</span>
       <button onClick={cambiarTexto}>Cambiar texto</button>
+
+      <p>
+        {
+          parrafoEstaExtendidoValue 
+          ? parrafo_original
+          : limitarParrafoPorPalabras(parrafo_original, 5) + '...'
+        }
+      </p>
+      {
+        parrafoEstaExtendidoValue
+        ? <button onClick={achicarParrafo}>Ver menos</button>
+        : <button onClick={extenderParrafo}>Ver mas</button>
+      }
+
     </div>
   )
 }
