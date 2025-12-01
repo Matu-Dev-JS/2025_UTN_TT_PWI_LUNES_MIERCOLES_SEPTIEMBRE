@@ -12,6 +12,7 @@ git add .
 
 git commit -m 'mensaje descriptivo del cambio'
 
+
 # Esto solo hay que hacerlo una vez 
 # Renombrar la rama master a main
 
