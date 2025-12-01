@@ -1,4 +1,4 @@
-
+/* Esto en una app real NO EXISTE, solo estamos guardando datos de mook (boceto) para hacer pruebas */
 const contact_data = [
     {
         contact_id: 1,

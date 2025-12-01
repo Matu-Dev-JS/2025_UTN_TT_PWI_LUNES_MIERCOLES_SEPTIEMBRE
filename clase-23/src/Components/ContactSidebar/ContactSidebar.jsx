@@ -12,6 +12,7 @@ export default function ContactSidebar() {
     const [contactState, setContactState] = useState([])
     const [loadingContactsState, setLoadingContactState] = useState(true)
 
+    /* loadContactList tiene la responsabilidad de cargar del servicio la lista de contactos */
     function loadContactList (){
         setLoadingContactState(true)
         /* Esta funcion nos permite atrasar la ejecucion de otra funcion
@@ -54,7 +55,7 @@ export default function ContactSidebar() {
                 <ContactSearchForm/>
                 <a>Crear contacto</a>
             </div>
-            <ContactList/>
+            <ContactList contactState={contactState} loadingContactsState={loadingContactsState}/>
         </aside>
     )
 }
