@@ -3,7 +3,7 @@ import ContactSidebar from "./Components/ContactSidebar/ContactSidebar"
 import { Route, Routes } from "react-router"
 import ChatScreen from "./Screens/ChatScreen/ChatScreen"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
-
+import './global.css'
 
 
 function App (){
@@ -20,7 +20,7 @@ function App (){
             } 
           />
           <Route 
-            path="/chat" 
+            path="/chat/:contact_id" 
             element={
               <MessagesScreen />
             } 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './ContactList.css'
+import { Link } from 'react-router'
 
 export default function ContactList(props) {
     if(props.loadingContactsState){
@@ -19,7 +20,7 @@ export default function ContactList(props) {
             props.contactState.map(
                 function (contact){
                     return (
-                        <a key={contact.contact_id}>
+                        <Link className='contact-item' key={contact.contact_id} to={'/chat/' + contact.contact_id}>
                             <div>
                                 <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
                                 <h2>{contact.contact_name}</h2>
@@ -32,7 +33,7 @@ export default function ContactList(props) {
                                     <span>{contact.contact_unseen_messages}</span>
                                 }
                             </div>
-                        </a>
+                        </Link>
                     )
                 }
             )
