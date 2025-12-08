@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router"
 import ChatScreen from "./Screens/ChatScreen/ChatScreen"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 import './global.css'
+import ContactListContextProvider from "./Context/ContactListContext"
 
 
 function App (){
@@ -14,15 +15,26 @@ function App (){
         <Routes>
           {/* Cuando estemos en la ruta contact mostrar el h1 */}
           <Route 
-            path="/" 
-            element={
-              <ChatScreen/>
-            } 
-          />
+            element={<ContactListContextProvider/>}
+          >
+            <Route 
+              path="/" 
+              element={
+                <ChatScreen/>
+              } 
+            />
+            <Route 
+              path="/chat/:contact_id" 
+              element={
+                <MessagesScreen />
+              } 
+            />
+          </Route>
+
           <Route 
-            path="/chat/:contact_id" 
+            path="/login" 
             element={
-              <MessagesScreen />
+              <h1>Soy el login</h1>
             } 
           />
         </Routes>

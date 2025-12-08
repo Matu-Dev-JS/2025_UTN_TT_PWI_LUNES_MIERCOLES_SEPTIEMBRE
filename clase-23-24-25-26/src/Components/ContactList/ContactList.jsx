@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ContactList.css'
 import { Link } from 'react-router'
+import { ContactListContext } from '../../Context/ContactListContext'
 
-export default function ContactList(props) {
-    if(props.loadingContactsState){
+export default function ContactList() {
+    const {
+        contactState,
+        loadingContactsState
+    } = useContext(ContactListContext)
+
+    if(loadingContactsState){
         return (
             <div>Cargando contactos...</div>
         )
     }
 
-    if(props.contactState.length === 0){
+    if(contactState.length === 0){
         return (
             <div>No hay contactos</div>
         )
@@ -17,7 +23,7 @@ export default function ContactList(props) {
   return (
     <div>
         {
-            props.contactState.map(
+            contactState.map(
                 function (contact){
                     return (
                         <Link className='contact-item' key={contact.contact_id} to={'/chat/' + contact.contact_id}>
