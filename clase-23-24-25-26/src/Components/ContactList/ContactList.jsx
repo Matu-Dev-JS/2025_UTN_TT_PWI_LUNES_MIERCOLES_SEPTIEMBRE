@@ -26,7 +26,7 @@ export default function ContactList() {
             contactState.map(
                 function (contact){
                     return (
-                        <Link className='contact-item' key={contact.contact_id} to={'/chat/' + contact.contact_id}>
+                        <Link className='contact-item' key={contact.contact_id} to={'/chat/' + contact.contact_id + '/messages'}>
                             <div>
                                 <img className='contact-avatar' src={contact.contact_avatar} alt={contact.contact_name} />
                                 <h2>{contact.contact_name}</h2>

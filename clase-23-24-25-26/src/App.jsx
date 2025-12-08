@@ -5,6 +5,7 @@ import ChatScreen from "./Screens/ChatScreen/ChatScreen"
 import MessagesScreen from "./Screens/MessagesScreen/MessagesScreen"
 import './global.css'
 import ContactListContextProvider from "./Context/ContactListContext"
+import ContactDetailContextProvider from "./Context/ContactDetailContext"
 
 
 function App (){
@@ -26,9 +27,16 @@ function App (){
             <Route 
               path="/chat/:contact_id" 
               element={
-                <MessagesScreen />
+                <ContactDetailContextProvider />
               } 
-            />
+            >
+              <Route 
+                path="/chat/:contact_id/messages" 
+                element={
+                  <MessagesScreen/>
+                } 
+              />
+            </Route>
           </Route>
 
           <Route 
