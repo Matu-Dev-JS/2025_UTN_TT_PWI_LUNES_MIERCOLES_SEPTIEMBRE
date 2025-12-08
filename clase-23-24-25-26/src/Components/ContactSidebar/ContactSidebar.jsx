@@ -2,15 +2,18 @@
 Snippet para crear un componente de react
 RFC = React Functional Component
 */
-
-import React, { useEffect, useState } from 'react'
+import './ContactSidebar.css'
+import React, { useContext, useEffect, useState } from 'react'
 import ContactSearchForm from '../ContactSearchForm/ContactSearchForm'
 import ContactList from '../ContactList/ContactList'
 import { getContactList } from '../../services/contactService'
+import { ThemeContext } from '../../Context/ThemeContext'
 
 export default function ContactSidebar() {
     const [contactState, setContactState] = useState([])
     const [loadingContactsState, setLoadingContactState] = useState(true)
+
+
 
     /* loadContactList tiene la responsabilidad de cargar del servicio la lista de contactos */
     function loadContactList (){
@@ -48,9 +51,12 @@ export default function ContactSidebar() {
     )
     console.log({loadingContactsState, contactState})
     
+    const {isDark, toggleTheme} = useContext(ThemeContext)
+    console.log('Es valor de isDark es: ' + isDark)
    
     return (
-        <aside>
+        <aside className={`aside ` + (isDark ? 'aside-dark' : '')}>
+            <button onClick={toggleTheme}>Cambiar tema</button>
             <div>
                 <ContactSearchForm/>
                 <a>Crear contacto</a>
